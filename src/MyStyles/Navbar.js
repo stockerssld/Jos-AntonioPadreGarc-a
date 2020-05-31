@@ -51,7 +51,7 @@ export const OptionsNav = styled(Column)`
     cursor: pointer;
 `
 const DisplayScreen = styled(Column)`
-    @media screen and (max-width: 677px) {
+    @media screen and (max-width: 687px) {
         display: none;
     }
 `

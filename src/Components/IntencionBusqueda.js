@@ -15,7 +15,7 @@ export default function(){
                 Intención de Busqueda de Empleo
             </Title>
             <br/>
-            <Columns isMovil>
+            <Columns isMovil isMultiline>
                 <ContentAlign>
                     <Image src="./image/js.png"/>
                     <Texto color="#7104e8" Title>
@@ -73,10 +73,13 @@ export default function(){
 
 const ContentAlign = styled(Column)`
     text-align: center;
-    
     font-size: 14px;
     flex:1;
     text-align: -webkit-center;
+    @media only screen and (max-width:687px){
+        border-bottom-style: groove;
+        
+    }
 `
 
 const Image = styled.img`
@@ -96,7 +99,6 @@ const Texto=styled.p`
 const SeccionBusqueda= styled.section`
     background: url(../image/services-bg.jpg) no-repeat center;
     background-attachment: fixed;
-    height: 100vh;
     display:'flex';
     flex:1%;
     margin: 2%;
@@ -104,4 +106,5 @@ const SeccionBusqueda= styled.section`
     display: block;
     user-select: none;
     padding: 3rem 1.5rem;
+    
 `
