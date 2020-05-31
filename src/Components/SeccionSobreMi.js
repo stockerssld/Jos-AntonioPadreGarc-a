@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Column } from '../MyStyles/Columns'
+import { Title } from '../MyStyles/title'
 
 export default function SeccionSobreMi(){
     return(
@@ -10,6 +11,7 @@ export default function SeccionSobreMi(){
                     <Title style={{textAlign:'center'}}>
                         Sobre Mí
                     </Title>
+                    <Texto>
                     <div>
                         Mi nombre es José Antonio Padre García tengo 23 años, ,
                         estoy graduado en Ingenieria en Tecnologías de la Información y Comunicación estoy motivado, y seguro de mí
@@ -29,6 +31,7 @@ export default function SeccionSobreMi(){
                     </div>
                     <br/>
                     Este proyecto está hecho en react
+                    </Texto>
                 </SeccionAboutme>
             </Column>
         
@@ -48,13 +51,11 @@ const SeccionAboutme = styled.section`
             }
         }
 `  
-
-const Title= styled.h1`
-    text-align: center;
-    text-align: center;
-    font-size: 30px;
-    line-height: 30px;
-    color: #2c3e50;
-    /* padding: 150px 0 0; */
-    letter-spacing: 2px;    
+const Texto=styled.p`
+    color: ${props=>props.color||'#787978'};
+    font-weight: ${props=>props.Title ? 'bold': ''};
+    font-size: ${props=>props.Title ? '18px': ''};
+    font-family: "Microsoft Yahei";
+    text-align: justify;
+    margin-bottom: 0;
 `
