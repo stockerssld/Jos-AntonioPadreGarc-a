@@ -2,13 +2,14 @@ import React from 'react';
 import './App.css';
 import styled from 'styled-components'
 import NabvarJAPG from './Components/Navbar';
+import SeccionSobreMi from './Components/SeccionSobreMi';
 
 function App() {
   return(
-    <div>
+    <>
       <NabvarJAPG/>
-
-    </div>
+      <SeccionSobreMi/>
+    </>
   )
 };
 // export 

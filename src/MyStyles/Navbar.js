@@ -3,16 +3,16 @@ import styled from 'styled-components'
 import {Column} from './Columns'
 
 
-export const SeccionName=(props,{children})=>(
+export const SeccionName=(props)=>(
     <Column isContainer isMovil>
         <ContentAlignImage porcentaje="20%">
             <Img src={props.img}/>
         </ContentAlignImage>
-        <Column>
+        <ColumnName>
             <Name>
-            {props.children}
+                {props.children}
             </Name>
-        </Column>
+        </ColumnName>
     </Column>
 )
 const ContentAlignImage = styled(Column)`
@@ -33,6 +33,9 @@ export const SeccionOptions = ({children}) =>(
       {children}
     </DisplayScreen>
 )
+const ColumnName=styled(Column)`
+align-self: center;
+`
 export const OptionsNav = styled(Column)`
     flex: 1;
     font-weight:100;
