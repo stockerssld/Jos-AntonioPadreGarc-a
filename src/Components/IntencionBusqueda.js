@@ -8,7 +8,6 @@ export default function(){
     return(
         <>
         <SeccionBusqueda     
-        Img="./../image/services-bg.jpg"
         >
         <div style={{marginTop: '10%'}}>
             <Title style={{textAlign:'center'}}>
@@ -22,11 +21,13 @@ export default function(){
                         Caracteristicas del Front  
                     </Texto>
                     <Texto>
+                    Utilice Mint-Lang para paginas LandingPage  
                     Utilice JS para lograr efectos funcionales de front-end comunes,                
                     Utilice React js para desarollar algunas paginas.
                     Utilice Redux para el gestionamiento de estados
                     Utilice CSS3, SASS, LESS para los estilo
                     Utilice StyledComponent para un mejor control de estilos en react
+                    Utilice diferentes frameworks y librerias de estilos Rbx, Material, Bulma, Bootstrap
                     </Texto>
                 </ContentAlign>
                 <ContentAlign>
@@ -39,6 +40,7 @@ export default function(){
                         Utilice Aws s3 para el gestionamiento de datos
                         Utilice varios lenguajes (Java, Node, Crystal, php, c#)
                         Utilice varios Frameworks (Spring, Express, Kemal, Laravel, RoR)
+                        Utilice diferentes bases de datos SQL server, Oracle, MongoDB, Postgrest, Mysql, Sql lite
                     </Texto>                       
                 </ContentAlign>
                 <ContentAlign>

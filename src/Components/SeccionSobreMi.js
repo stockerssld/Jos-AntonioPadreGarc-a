@@ -49,7 +49,7 @@ const SeccionAboutme = styled.section`
             .section.is-large {
                 padding: 18rem 1.5rem;
             }
-        }
+    }
 `  
 const Texto=styled.p`
     color: ${props=>props.color||'#787978'};

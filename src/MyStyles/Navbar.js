@@ -48,6 +48,10 @@ export const OptionsNav = styled(Column)`
     &:hover{
         color:darkorange;
     }
+    /* color:darkorange; */
+    color: ${({Options})=>JSON.stringify(Options)===JSON.stringify(true)?'darkorange':'white'};
+    /* background: ${({Options})=>JSON.stringify(Options)===JSON.stringify(true)?'yellow':'red'}; */
+    
     cursor: pointer;
 `
 const DisplayScreen = styled(Column)`
@@ -57,6 +61,7 @@ const DisplayScreen = styled(Column)`
 `
 
 export const Navbar =styled.div`
+    user-select: none;
     flex: 1;
     display: flex;
     align-items: center;
