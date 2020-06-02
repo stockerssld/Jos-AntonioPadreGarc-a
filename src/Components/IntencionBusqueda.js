@@ -14,7 +14,7 @@ export default function(){
                 Intención de Busqueda de Empleo
             </Title>
             <br/>
-            <Columns isMovil isMultiline>
+            <Columns isMovil isMultiline style={{background: 'transparent'}}>
                 <ContentAlign>
                     <Image src="./image/js.png"/>
                     <Texto color="#7104e8" Title>

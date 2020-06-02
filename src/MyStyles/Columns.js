@@ -9,7 +9,7 @@ export const Columns = styled.div`
     flex-wrap: ${props=>props.isMultiline ? 'wrap':''};
     margin: ${props=>props.isGapples ? '0':''};
     padding: ${props=>props.isGapples ? '0 !important':''};
-    
+    background-color: ${props=> props.BackgroundColor || 'white'};
 `
 export const Column=styled.div`
 

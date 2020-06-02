@@ -38,7 +38,7 @@ export default function SeccionSobreMi(){
     )
 }
 const SeccionAboutme = styled.section`
-    display:'flex';
+    display:flex;
     flex:1%;
     margin: 2%;
     text-align: justify;
