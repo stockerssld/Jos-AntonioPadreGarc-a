@@ -35,8 +35,8 @@ function NabvarJAPG() {
   }
   
   return(
-    <Navbar fixed>
-      <SeccionName img="https://avatars3.githubusercontent.com/u/49961390?s=400&u=9d0b82d60f97fe855dbe260f07a12c2ced710735&v=4">
+    <Navbar fixed className="nav">
+      <SeccionName img='./image/49961390.png'>
         {/* <h3> */}
       José Antonio Padre García
       {/* </h3> */}

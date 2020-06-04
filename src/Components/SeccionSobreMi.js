@@ -47,7 +47,7 @@ const SeccionAboutme = styled.section`
     padding: 3rem 1.5rem;
     @media screen and (min-width: 1024px){
             .section.is-large {
-                padding: 18rem 1.5rem;
+                padding: 0rem 1.5rem;
             }
     }
 `  

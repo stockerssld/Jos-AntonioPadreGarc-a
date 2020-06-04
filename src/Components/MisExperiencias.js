@@ -1,12 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Title} from './../MyStyles/title'
+import CV2 from './CV2'
 export default function(){
     return(
         <SeccionExperiencias>
             <Title>
-                Mis Experiencias
+                Mis Curriculum Vitae
             </Title>
+           <CV2/>
+
         </SeccionExperiencias>
     )
 }
@@ -18,8 +21,8 @@ export const SeccionExperiencias=styled.div`
     text-align: justify;
     display: block;
     user-select: none;
-    padding: 3rem 1.5rem;
+    padding: 1rem 1.5rem;
     @media screen and (min-width: 1024px){        
-        padding: 18rem 1.5rem;
+        padding: 10px 1.5rem;
     }
 `

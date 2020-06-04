@@ -69,7 +69,8 @@ export const Navbar =styled.div`
     color: ${props=> props.color || "#f5f5f5"} ;
     width: 100%;
     height: 70px;
-    position: ${props=> !props.fixed || 'fixed'};
+    
+    position: ${props=> !props.fixed  || 'fixed'};
     top: ${props=> !props.fixed || '0'} ;
     z-index: ${props=> !props.fixed || '999'} ;
 `

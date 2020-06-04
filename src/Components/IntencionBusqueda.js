@@ -15,7 +15,7 @@ export default function(){
             </Title>
             <br/>
             <Columns isMovil isMultiline style={{background: 'transparent'}}>
-                <ContentAlign>
+                <ContentAlign data-aos='fade-up'>
                     <Image src="./image/js.png"/>
                     <Texto color="#7104e8" Title>
                         Caracteristicas del Front  
@@ -30,7 +30,7 @@ export default function(){
                     Utilice diferentes frameworks y librerias de estilos Rbx, Material, Bulma, Bootstrap
                     </Texto>
                 </ContentAlign>
-                <ContentAlign>
+                <ContentAlign data-aos='fade-up'>
                     <Image src="./image/css.png"/>
                     <Texto color="#7104e8" Title>
                     Caracteristicas del Back
@@ -43,7 +43,7 @@ export default function(){
                         Utilice diferentes bases de datos SQL server, Oracle, MongoDB, Postgrest, Mysql, Sql lite
                     </Texto>                       
                 </ContentAlign>
-                <ContentAlign>
+                <ContentAlign data-aos='fade-up'>
                 <Image src="./image/h5.png"/>
                 <Texto color="#7104e8" Title>
                     Caracteristicas de Movil
@@ -55,7 +55,7 @@ export default function(){
                 </Texto>                       
                     
                 </ContentAlign>
-                <ContentAlign>
+                <ContentAlign data-aos='fade-up'>
                 <Image src="./image/web.png"/>
                 <Texto color="#7104e8" Title>
                     Caracteristicas de Diseño

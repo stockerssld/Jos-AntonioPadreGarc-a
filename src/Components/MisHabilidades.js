@@ -18,7 +18,7 @@ export default function(){
                 </Column>
                 <Column>
                     3
-                </Column>
+                </Column>yarn add react-pdf-viewer
                 <Column>
                     4
                 </Column>

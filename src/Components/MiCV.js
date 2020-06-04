@@ -8,6 +8,8 @@ export default function(){
             <Title>
                 Mi portafolio
             </Title>
+
+           
             <Columns isMovil isMultiline >
                 <Column data-aos='zoom-in-right'  style={{background:'green', alignContent:'center', display:'flex', flex:1, alignItems:'center', justifyContent:'center'}}>
                     <Card style={{background:"yellow"}}>
@@ -37,7 +39,7 @@ const SeccionPortafolio = styled.div`
     user-select: none;
     padding: 3rem 1.5rem;
     @media screen and (min-width: 1024px){        
-        padding: 18rem 1.5rem;
+        padding: 15rem 1.5rem;
     }
 
 `
