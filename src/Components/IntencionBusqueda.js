@@ -91,7 +91,7 @@ const Image = styled.img`
     height: 5rem;
 `
 const Texto=styled.p`
-    color: ${props=>props.color||'#787978'};
+    color: ${props=>props.color||'#2c3e50'};
     font-weight: ${props=>props.Title ? 'bold': ''};
     font-size: ${props=>props.Title ? '18px': ''};
     font-family: "Microsoft Yahei";

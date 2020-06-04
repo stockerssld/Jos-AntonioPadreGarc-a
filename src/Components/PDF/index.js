@@ -6,6 +6,7 @@ var pdfjs = _interopDefault(require('@bundled-es-modules/pdfjs-dist/build/pdf'))
 var React = require('react');
 var React__default = _interopDefault(React);
 
+
 const Pdf = ({
   file,
   onDocumentComplete,
@@ -40,7 +41,7 @@ const Pdf = ({
 Pdf.defaultProps = {
   onDocumentComplete: () => {}
 };
-const usePdf = ({
+export const usePdf = ({
   PdfRef,
   file,
   scale = 1,
@@ -109,6 +110,7 @@ const usePdf = ({
   return [loading, numPages];
 };
 
-exports.default = Pdf;
-exports.usePdf = usePdf;
+// exports.default = Pdf;
+// exports.usePdf = usePdf;
+
 //# sourceMappingURL=react-pdf-js.cjs.development.js.map
