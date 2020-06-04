@@ -1,7 +1,116 @@
-import e from "@bundled-es-modules/pdfjs-dist/build/pdf";
-import t, { useRef as r, useEffect as o, useState as a, useMemo as c } from "react";
-const n = ({ file: e, onDocumentComplete: a, page: c, scale: n, rotate: s, cMapUrl: i, cMapPacked: d, workerSrc: p, withCredentials: h }) => {
-    const u = r(null), [, w] = l({ PdfRef: u, file: e, page: c, scale: n, rotate: s, cMapUrl: i, cMapPacked: d, workerSrc: p, withCredentials: h });
-    return o(() => { a(w) }, [w]), t.createElement("canvas", { ref: u })
-}; n.defaultProps = { onDocumentComplete: () => { } }; const l = ({ PdfRef: t, file: r, scale: n = 1, rotate: l = 0, page: s = 1, cMapUrl: i, cMapPacked: d, workerSrc: p = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.1.266/pdf.worker.js", withCredentials: h = !1 }) => { const [u, w] = a(); o(() => { e.GlobalWorkerOptions.workerSrc = p }, []), o(() => { const t = { url: r, withCredentials: h }; i && (t.cMapUrl = i, t.cMapPacked = d), e.getDocument(t).promise.then(w) }, [r, h]), o(() => { u && u.getPage(s).then(e => f(e)) }, [u, s, n, l, t]); const f = e => { const r = 0 === l ? e.rotate : e.rotate + l; let o = 1; o = window.devicePixelRatio; const a = n * o, c = e.getViewport({ scale: a, rotation: r }), s = t.current; if (!s) return; const i = s.getContext("2d"); s.style.width = `100%`, s.style.height = `100%`, s.height = c.height, s.width = c.width; const d = { canvasContext: i, viewport: c }; e.render(d) }, m = c(() => !u, [u]), g = c(() => u ? u._pdfInfo.numPages : null, [u]); return [m, g] }; export default n; export { l as usePdf };
-//# sourceMappingURL=react-pdf-js.es.production.js.map
+'use strict';
+
+function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
+
+var pdfjs = _interopDefault(require('@bundled-es-modules/pdfjs-dist/build/pdf'));
+var React = require('react');
+var React__default = _interopDefault(React);
+
+
+const Pdf = ({
+  file,
+  onDocumentComplete,
+  page,
+  scale,
+  rotate,
+  cMapUrl,
+  cMapPacked,
+  workerSrc,
+  withCredentials
+}) => {
+  const PdfRef = React.useRef(null);
+  const [, numPages] = usePdf({
+    PdfRef,
+    file,
+    page,
+    scale,
+    rotate,
+    cMapUrl,
+    cMapPacked,
+    workerSrc,
+    withCredentials
+  });
+  React.useEffect(() => {
+    onDocumentComplete(numPages);
+  }, [numPages]);
+  return React__default.createElement("canvas", {
+    ref: PdfRef
+  });
+};
+
+Pdf.defaultProps = {
+  onDocumentComplete: () => {}
+};
+export const usePdf = ({
+  PdfRef,
+  file,
+  scale = 1,
+  rotate = 0,
+  page = 1,
+  cMapUrl,
+  cMapPacked,
+  workerSrc = '//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.1.266/pdf.worker.js',
+  withCredentials = false
+}) => {
+  const [pdf, setPdf] = React.useState();
+  React.useEffect(() => {
+    pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
+  }, []);
+  React.useEffect(() => {
+    const config = {
+      url: file,
+      withCredentials
+    };
+
+    if (cMapUrl) {
+      config.cMapUrl = cMapUrl;
+      config.cMapPacked = cMapPacked;
+    }
+
+    pdfjs.getDocument(config).promise.then(setPdf);
+  }, [file, withCredentials]); // handle changes
+
+  React.useEffect(() => {
+    if (pdf) {
+      pdf.getPage(page).then(p => drawPDF(p));
+    }
+  }, [pdf, page, scale, rotate, PdfRef]); // draw a page of the pdf
+
+  const drawPDF = page => {
+    // Because this page's rotation option overwrites pdf default rotation value,
+    // calculating page rotation option value from pdf default and this component prop rotate.
+    const rotation = rotate === 0 ? page.rotate : page.rotate + rotate;
+    let dpRatio = 1;
+    dpRatio = window.devicePixelRatio;
+    const adjustedScale = scale * dpRatio;
+    const viewport = page.getViewport({
+      scale: adjustedScale,
+      rotation
+    });
+    const canvas = PdfRef.current;
+
+    if (!canvas) {
+      return;
+    }
+
+    const canvasContext = canvas.getContext('2d');
+    canvas.style.width = `100%`;
+    canvas.style.height = `100%`;
+    canvas.height = viewport.height;
+    canvas.width = viewport.width;
+    const renderContext = {
+      canvasContext,
+      viewport
+    };
+    page.render(renderContext);
+  };
+
+  const loading = React.useMemo(() => !pdf, [pdf]);
+  const numPages = React.useMemo(() => pdf ? pdf._pdfInfo.numPages : null, [pdf]);
+  return [loading, numPages];
+};
+
+// exports.default = Pdf;
+// exports.usePdf = usePdf;
+
+//# sourceMappingURL=react-pdf-js.cjs.development.js.map
