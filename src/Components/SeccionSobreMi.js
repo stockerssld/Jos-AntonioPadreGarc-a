@@ -1,9 +1,11 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import styled from 'styled-components'
 import { Column } from '../MyStyles/Columns'
 import { Title } from '../MyStyles/title'
 
 export default function SeccionSobreMi(){
+    const refAS= useRef(null)
+    console.log(refAS)
     return(
         
             <Column>
@@ -12,6 +14,9 @@ export default function SeccionSobreMi(){
                         Sobre Mí
                     </Title>
                     <Texto>
+                    <p style={{textAlign: 'center', marginBottom:0, margin: '0 0 10px', filter:'grayscale(100%)'}}>
+                        <Myimage src="./image/JAPG.jpg"/>
+                    </p>
                     <div>
                         Mi nombre es José Antonio Padre García tengo 23 años, ,
                         estoy graduado en Ingenieria en Tecnologías de la Información y Comunicación estoy motivado, y seguro de mí
@@ -58,4 +63,12 @@ const Texto=styled.p`
     font-family: "Microsoft Yahei";
     text-align: justify;
     margin-bottom: 0;
+`
+
+const Myimage = styled.img`
+    max-width: 200px;
+    width: 40%;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 0;
 `
