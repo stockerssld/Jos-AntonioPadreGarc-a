@@ -2,13 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import {Title} from './../MyStyles/title'
 import CV2 from './CV2'
+import { Columns } from '../MyStyles/Columns'
 export default function(){
     return(
-        <SeccionExperiencias>
-            <Title>
+        <SeccionExperiencias id="CurriculumJAPG">
+            <Columns>
+            <Title  id="CurriculumJAPG">
                 Mis Curriculum Vitae
             </Title>
            <CV2/>
+           </Columns>
 
         </SeccionExperiencias>
     )

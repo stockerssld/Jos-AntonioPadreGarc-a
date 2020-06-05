@@ -22,7 +22,7 @@ export const Column=styled.div`
     flex-grow: 1;
     flex-shrink: 1;
     padding: 0.75rem;
-    flex: ${props=>props.porcentaje ? 'none': '1'};
+    flex: ${props=>props.porcentaje ? 'none': ''};
     width: ${props=>props.porcentaje ? props.porcentaje : '100%'}%;
 
 `

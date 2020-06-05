@@ -2,27 +2,14 @@ import React from 'react'
 import styled from 'styled-components'
 import { Title } from '../MyStyles/title'
 import { Columns, Column } from '../MyStyles/Columns'
-
+import {SeccionSeleccionableTabs,Tab,Tabs} from './../MyStyles/Tabs'
 export default function(){
     return(
         <SeccionMisHabilidades>
             <Title>
                 Mis Habilidades
             </Title>
-            <Columns isMovil isGapples isMultiline style={{background: 'transparent'}}>
-                <Column>
-                    1
-                </Column>
-                <Column>
-                    2
-                </Column>
-                <Column>
-                    3
-                </Column>yarn add react-pdf-viewer
-                <Column>
-                    4
-                </Column>
-            </Columns>
+          
         </SeccionMisHabilidades>
     )
 }
