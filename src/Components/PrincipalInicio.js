@@ -10,18 +10,30 @@ import { Title } from '../MyStyles/title'
 export default function(){
     return(
             <>
-          
+           
             <SeccionPrincipal data-aos="zoom-out-up" style={{textAlign:'center', justifyContent: 'center'}}>
-                
-                    <LogoRotate src={Logo} rotate="1"/>
-                {/* <LogoRotate src={logoReact} style={{top:0, width:'10rem',height:'10rem'}}/> */}
-                 <MyIntro>
-                    <Nombre data-aos='zoom-in-right' _msthash="322023" _msttexthash="302393">Hola, <br/>soy José Antonio Padre García</Nombre>
+                <div className="wrapperr">
+                    <ul className="bg-bubbles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
 
+                 <MyIntro >
+                    <Nombre data-aos='zoom-in-right' _msthash="322023" _msttexthash="302393">Hola, <br/>soy José Antonio Padre García</Nombre>
+                    
                     <Sub data-aos='zoom-in-right' _msthash="322946" _msttexthash="1125007">Un Desarrollador Full Stack</Sub>
                     <div  data-aos='fade-up'>
-                        <ButtonAboutMe _msthash="41158" _msttexthash="125255">Sobre mí.</ButtonAboutMe>
-                        <ButtonMyWorks id="mypro"  _msthash="66300" _msttexthash="132808">Mi trabajo</ButtonMyWorks>
+                        {/* <ButtonAboutMe _msthash="41158" _msttexthash="125255">Sobre mí.</ButtonAboutMe>
+                        <ButtonMyWorks id="mypro"  _msthash="66300" _msttexthash="132808">Mi trabajo</ButtonMyWorks> */}
                     </div>
                 </MyIntro>  
             </SeccionPrincipal>
@@ -82,6 +94,9 @@ const SeccionPrincipal= styled.div`
     text-align:center;
     flex: 1;
     display: flex;
+    background: url(../image/nature.jpg)  no-repeat center;
+    
+    
 `
 const Nombre = styled.h1`
     font-family: cursive, 'Lato', sans-serif;
@@ -94,6 +109,7 @@ const Nombre = styled.h1`
     -webkit-transform: translateY(0);
     opacity: 1;
     transition: all 1s 0s;
+    z-index: 3
 `
 const Sub = styled.h3`
     letter-spacing: 3px;
@@ -103,6 +119,7 @@ const Sub = styled.h3`
     -webkit-transform: translateY(0);
     opacity: 1;
     transition: all 1s 0.5s;
+    z-index: 3
 `
 const MyIntro = styled.div`
     padding: 20vh 0 0 ;
@@ -115,36 +132,7 @@ const MyIntro = styled.div`
     letter-spacing: 2px;
     transition: all 0.35s;
     background: rgba(256,256,256,0.5);
+    z-index: 3
 
 `
 
-
-const rotate = keyframes`
-    from {
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-`
-const rotateB = keyframes`
-    from {
-        transform: rotate(360deg);
-    }
-    to{0
-        transform: rotate(0deg);
-    }
-`
-const LogoRotate = styled.img`
-    animation: ${rotate} 20s linear infinite;
-    place-content: center;
-    top: 10;
-    align-self: center;
-    @media screen and (max-width: 990px) {
-        display: none;
-    }
-    @media screen and (min-width: 1500px){
-        display:none;
-    }
-    
-`

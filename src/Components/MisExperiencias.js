@@ -8,7 +8,7 @@ export default function(){
         <SeccionExperiencias id="CurriculumJAPG">
             <Columns>
             <Title  id="CurriculumJAPG">
-                Mis Curriculum Vitae
+                Mi Curriculum Vitae
             </Title>
            <CV2/>
            </Columns>

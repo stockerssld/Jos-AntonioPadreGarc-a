@@ -21,13 +21,19 @@ export default function(){
                         Caracteristicas del Front  
                     </Texto>
                     <Texto>
-                    Utilice Mint-Lang para paginas LandingPage  
-                    Utilice JS para lograr efectos funcionales de front-end comunes,                
-                    Utilice React js para desarollar algunas paginas.
-                    Utilice Redux para el gestionamiento de estados
-                    Utilice CSS3, SASS, LESS para los estilo
-                    Utilice StyledComponent para un mejor control de estilos en react
-                    Utilice diferentes frameworks y librerias de estilos Rbx, Material, Bulma, Bootstrap
+                    Utilice Mint-Lang para paginas LandingPages.
+                    <br/>
+                    Utilice JS para lograr efectos funcionales de front-end comunes.                
+                    <br/>
+                    Utilice React js, Angular 9 para desarollar algunas paginas.
+                    <br/>
+                    Utilice Redux para el gestionamiento de estados.
+                    <br/>
+                    Utilice CSS3, SASS, SCSS,  STYLUS y LESS para los estilos.
+                    <br/>
+                    Utilizo StyledComponent para un mejor control de estilos en react
+                    <br/>
+                    Utilice diferentes frameworks y librerias de estilos Rbx, Material, Bulma, Bootstrap,
                     </Texto>
                 </ContentAlign>
                 <ContentAlign data-aos='fade-up'>
@@ -37,9 +43,13 @@ export default function(){
                     </Texto>
                     <Texto>
                         Realizacion de apis
+                        <br/>
                         Utilice Aws s3 para el gestionamiento de datos
-                        Utilice varios lenguajes (Java, Node, Crystal, php, c#)
-                        Utilice varios Frameworks (Spring, Express, Kemal, Laravel, RoR)
+                        <br/>
+                        Utilice varios lenguajes (Node, Crystal, php, c#, Java, Ruby)
+                        <br/>
+                        Utilice varios Frameworks (Express, Kemal, Laravel, Spring, RoR)
+                        <br/>
                         Utilice diferentes bases de datos SQL server, Oracle, MongoDB, Postgrest, Mysql, Sql lite
                     </Texto>                       
                 </ContentAlign>
@@ -50,8 +60,10 @@ export default function(){
                 </Texto>
                 <Texto>
                     Realización de interfaces para dispositivos moviles, y conexión de apis
-                    Utilice Android Studio
-                    Utilice React Native    
+                    <br/>
+                    Utilice Android Studio y React Native    
+                    <br/>
+                    Actualmente estoy aprendiendo flutter.
                 </Texto>                       
                     
                 </ContentAlign>
@@ -61,9 +73,11 @@ export default function(){
                     Caracteristicas de Diseño
                     </Texto>
                     <Texto>
-                    Paginas adaptables, codigo simple, no redundate y entendible.
+                    Paginas adaptables, codigo simple, no rebundante y entendible.
+                    <br/>
                     Algunos efectos de animación suave con diferentes navegadores.
-                    He maquetado algunos diseños en Adobe XD                    
+                    <br/>
+                    He maquetado algunos diseños en XD                    
                     </Texto>
                 </ContentAlign>
             </Columns>

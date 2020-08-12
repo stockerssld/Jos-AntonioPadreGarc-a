@@ -45,9 +45,9 @@ export const OptionsNav = styled(Column)`
     justify-content: center;
 
     text-align:center;
-    &:hover{
-        color:darkorange;
-    }
+    // &:hover{
+    //     color:darkorange;
+    // }
     /* color:darkorange; */
     color: ${({Options})=>JSON.stringify(Options)===JSON.stringify(true)?'darkorange':'white'};
     /* background: ${({Options})=>JSON.stringify(Options)===JSON.stringify(true)?'yellow':'red'}; */
@@ -55,6 +55,7 @@ export const OptionsNav = styled(Column)`
     cursor: pointer;
 `
 const DisplayScreen = styled(Column)`
+    justify-content: flex-end;
     @media screen and (max-width: 687px) {
         display: none;
     }

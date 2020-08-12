@@ -2,14 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import { Title } from '../MyStyles/title'
 import { Columns, Column } from '../MyStyles/Columns'
-import {SeccionSeleccionableTabs,Tab,Tabs} from './../MyStyles/Tabs'
+import {SeccionSeleccionableTabs,Tab} from './../MyStyles/Tabs'
+import Tabs from './Tabs'
 export default function(){
     return(
-        <SeccionMisHabilidades>
+        <SeccionMisHabilidades id="Habilidades">
             <Title>
                 Mis Habilidades
             </Title>
-          
+          <Tabs/>
         </SeccionMisHabilidades>
     )
 }

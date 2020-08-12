@@ -1,4 +1,4 @@
-import React,{useEffect, useRef} from 'react';
+import React,{useEffect, useRefd, useRef} from 'react';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './App.css';
@@ -12,32 +12,52 @@ import MiCV from './Components/MiCV'
 import MisHabilidades from './Components/MisHabilidades'
 import PrincipalInicio from './Components/PrincipalInicio'
 
+// import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  Link,
+  useLocation,
+  withRouter
+  
+} from "react-router-dom";
 
 function App() {
   
-  const   entrada = useRef()
+  const RefScroll = useRef()
+  const location = useLocation()
+
   useEffect(()=>{
     AOS.init({
       duration: 2000
     })
   },[])
-  
+  useEffect(()=>{
+  if(RefScroll && location.hash.includes("#SobreMi")){
+      // RefScroll?.current?.scrollIntoView({
+      //     behavior: 'smooth',
+      //     block: 'start',
+      //     inline: 'center'
+      // })
+      console.log(RefScroll)
+  }
+  }, [RefScroll, location.hash])
 
   return(
     <>
-      <AllSeccion  data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    
+      <AllSeccion style={{backgroundColor:'#f1f1f1'}} ref={RefScroll}  data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     
 
         <PrincipalInicio/>
-        
         <NabvarJAPG />
-        {/* <input type="text" placeholder="s" ></input>
-        <button onClick={()=>console.log(entrada)}/> */}
         <SeccionSobreMi/>
         <IntencionBusqueda />
-        <MiCV/>
-        <MisHabilidades/>
         <MisExperiencias/>
+        <MisHabilidades/>
+        {/* <MiCV/> */}
+
         <PongaseEnContacto/>
         
         
