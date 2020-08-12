@@ -70,7 +70,7 @@ export default function () {
     <div className={classes.root}>
       <AppBar position="static" color="default">
         <Tabs
-        style={{alignSelf:'center'}}
+        // style={{alignSelf:'center'}}
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
