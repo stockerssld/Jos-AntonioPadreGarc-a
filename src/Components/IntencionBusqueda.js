@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Img from './../image/services-bg.jpg'
+// import Img from './../image/services-bg.jpg'
 import { Title } from '../MyStyles/title'
 import { Columns, Column } from '../MyStyles/Columns'
 
@@ -11,21 +11,21 @@ export default function(){
         >
         <div style={{marginTop: '10%'}}>
             <Title style={{textAlign:'center'}}>
-                Intención de Busqueda de Empleo
+                Intención de Búsqueda de Empleo
             </Title>
             <br/>
             <Columns isMovil isMultiline style={{background: 'transparent'}}>
                 <ContentAlign data-aos='fade-up'>
                     <Image src="./image/js.png"/>
                     <Texto color="#7104e8" Title>
-                        Caracteristicas del Front  
+                        Características del Front  
                     </Texto>
                     <Texto>
-                    Utilice Mint-Lang para paginas LandingPages.
+                    Utilice Mint-Lang para páginas LandingPages.
                     <br/>
                     Utilice JS para lograr efectos funcionales de front-end comunes.                
                     <br/>
-                    Utilice React js, Angular 9 para desarollar algunas paginas.
+                    Utilice React js, Angular 9 para desarollar algunas páginas.
                     <br/>
                     Utilice Redux para el gestionamiento de estados.
                     <br/>
@@ -33,16 +33,16 @@ export default function(){
                     <br/>
                     Utilizo StyledComponent para un mejor control de estilos en react
                     <br/>
-                    Utilice diferentes frameworks y librerias de estilos Rbx, Material, Bulma, Bootstrap,
+                    Utilice diferentes frameworks y librerías de estilos Rbx, Material, Bulma, Bootstrap,
                     </Texto>
                 </ContentAlign>
                 <ContentAlign data-aos='fade-up'>
                     <Image src="./image/css.png"/>
                     <Texto color="#7104e8" Title>
-                    Caracteristicas del Back
+                    Características del Back
                     </Texto>
                     <Texto>
-                        Realizacion de apis
+                        Realización de apis
                         <br/>
                         Utilice Aws s3 para el gestionamiento de datos
                         <br/>
@@ -56,10 +56,10 @@ export default function(){
                 <ContentAlign data-aos='fade-up'>
                 <Image src="./image/h5.png"/>
                 <Texto color="#7104e8" Title>
-                    Caracteristicas de Movil
+                    Características de Móvil
                 </Texto>
                 <Texto>
-                    Realización de interfaces para dispositivos moviles, y conexión de apis
+                    Realización de interfaces para dispositivos móviles, y conexión de apis
                     <br/>
                     Utilice Android Studio y React Native    
                     <br/>
@@ -70,10 +70,10 @@ export default function(){
                 <ContentAlign data-aos='fade-up'>
                 <Image src="./image/web.png"/>
                 <Texto color="#7104e8" Title>
-                    Caracteristicas de Diseño
+                    Características de Diseño
                     </Texto>
                     <Texto>
-                    Paginas adaptables, codigo simple, no rebundante y entendible.
+                    Páginas adaptables, código simple, no rebundante y entendible.
                     <br/>
                     Algunos efectos de animación suave con diferentes navegadores.
                     <br/>

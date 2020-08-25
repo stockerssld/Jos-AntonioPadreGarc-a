@@ -1,18 +1,14 @@
-import React, { memo, useEffect, useContext, useRef } from "react";
+import React, { memo } from "react";
 import {
   BrowserRouter,
   Switch,
-  Route,
-  Link,
-  useLocation,
-  withRouter
-  
+  Route,  
 } from "react-router-dom";
 
 import App from "./App";
 
 
-export default function() {
+export default memo(function() {
  
   return (
       <BrowserRouter>
@@ -22,4 +18,4 @@ export default function() {
             </Switch>
       </BrowserRouter>
   );
-}
+})

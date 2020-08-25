@@ -1,4 +1,4 @@
-import React,{useEffect, useRefd, useRef} from 'react';
+import React,{useEffect, useRef} from 'react';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import './App.css';
@@ -8,19 +8,13 @@ import SeccionSobreMi from './Components/SeccionSobreMi';
 import IntencionBusqueda from './Components/IntencionBusqueda';
 import PongaseEnContacto from './Components/PongaseEnContacto';
 import MisExperiencias from './Components/MisExperiencias'
-import MiCV from './Components/MiCV'
+// import MiCV from './Components/MiCV'
 import MisHabilidades from './Components/MisHabilidades'
 import PrincipalInicio from './Components/PrincipalInicio'
 
 // import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import {
-  BrowserRouter,
-  Switch,
-  Route,
-  Link,
-  useLocation,
-  withRouter
-  
+  useLocation,  
 } from "react-router-dom";
 
 function App() {

@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SwipeableViews from 'react-swipeable-views';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Card from '../Card';
 import styled from 'styled-components'
@@ -127,7 +125,6 @@ export default function () {
           <Card imgPanel="./../icons/java.png" titleDescription="Java" />
           <Card imgPanel="./../icons/kotlin.png" titleDescription="Kotlin" />
           <Card imgPanel="./../icons/ruby.png" titleDescription="Ruby" />
-          <Card imgPanel="./../icons/mongoid.png" titleDescription="Mongoid" />
      
           
         </TabPanelMOd>
@@ -196,9 +193,11 @@ const TabPanelMOd = styled(TabPanel)`
     & > div{
       display: flex; 
       flex:1;
-      height: 56vh;
+      
+      height: 22rem;
       flex-wrap: wrap;
       flex-direction: column;
+      width:21rem;
     }
 `
 

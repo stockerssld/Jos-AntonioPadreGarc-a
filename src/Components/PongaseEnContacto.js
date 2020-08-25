@@ -5,7 +5,7 @@ export default function(){
         <SeccionContactame style={{textAlignLast: 'center'}} id="Contacto">
             <div style={{marginTop: '10%', textAlignLast: 'center'}}>
             <Titulo>
-            Póngase en contacto con migo.
+            Póngase en contacto conmigo.
             <br/><br/><br/>
             <Abc href="https://api.whatsapp.com/send?phone=+527731795752"  target="_blank" data-wow-delay="0.2s" style={{outline: 'none', textDecoration: 'none'}}>
                 +527731795752
@@ -28,37 +28,37 @@ const Abc=styled.a`
         color: #09090a;
     }
 `
-const ButtonLinkedi = styled.a`
-    display: inline-block;
-    font-weight: 400;
-    line-height: 1.25;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: .5rem 1rem;
-    font-size: 1rem;
-    border-radius: .25rem;
-    text-transform: uppercase;
-    transition: .2s ease-out;
-    font-size: .8rem;
-    padding: .85rem 2.13rem;
-    border-radius: 2px;
-    border: 0;
-    color: #fff!important;
-    margin: 6px;
-    white-space: normal!important;
-    background-color:#0082CA;
-    font-size: .9rem;
-    padding: 1rem 2.4rem;
-    outline: none;
-    text-decoration: none;
-`
+// const ButtonLinkedi = styled.a`
+//     display: inline-block;
+//     font-weight: 400;
+//     line-height: 1.25;
+//     text-align: center;
+//     white-space: nowrap;
+//     vertical-align: middle;
+//     cursor: pointer;
+//     -webkit-user-select: none;
+//     -moz-user-select: none;
+//     -ms-user-select: none;
+//     user-select: none;
+//     border: 1px solid transparent;
+//     padding: .5rem 1rem;
+//     font-size: 1rem;
+//     border-radius: .25rem;
+//     text-transform: uppercase;
+//     transition: .2s ease-out;
+//     font-size: .8rem;
+//     padding: .85rem 2.13rem;
+//     border-radius: 2px;
+//     border: 0;
+//     color: #fff!important;
+//     margin: 6px;
+//     white-space: normal!important;
+//     background-color:#0082CA;
+//     font-size: .9rem;
+//     padding: 1rem 2.4rem;
+//     outline: none;
+//     text-decoration: none;
+// `
 
 const SeccionContactame = styled.section`
     background: url(../image/achivements-bg.jpg) no-repeat center;

@@ -1,11 +1,9 @@
-import React,{useRef} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { Columns,Column } from '../MyStyles/Columns'
 import { Title } from '../MyStyles/title'
 
 export default function SeccionSobreMi(){
-    // const refAS= useRef(null)
-    // console.log(refAS)
     return(
         
                 <SeccionAboutme id="SobreMi"  style={{backgroundColor:'whitesmoke'}}>
@@ -17,21 +15,21 @@ export default function SeccionSobreMi(){
                             <Column style={{width:'70%', flex:'none' }}>
                                
                                 <p style={{textAlign: 'center', marginBottom:0, margin: '0 0 10px', filter:'grayscale(100%)'}}>
-                                    <Myimage src="./image/JAPG.jpg"/>
+                                    <Myimage src="./image/JAPG.jfif"/>
                                 </p>
                                 <Texto>
 
-                                    Hola, mi nombre es José Antonio Padre García tengo 23 años, ,
-                                    estoy graduado en Ingenieria en Tecnologías de la Información y Comunicación estoy motivado, y seguro de mí
+                                    Hola, mi nombre es José Antonio Padre García tengo 23 años,
+                                    estoy graduado en Ingeniería en Tecnologías de la Información y Comunicación estoy motivado, y seguro de mí
                                     mismo, cuento con conocimientos técnicos y habilidades en el desarrollo, comprometido con las tareas
                                     y trabajos a realizar, con alto nivel de perseverancia, honestidad, y respeto a los demás, mi objetivo es
-                                    desarrollar mis conocimientos y capacidades para un bien común tanto personal como laboral,  me gusta trabajar 
+                                    desarrollar mis conocimientos y capacidades para un bien común tanto personal como laboral, me gusta trabajar 
                                     ordenadamente y tener las pautas claras en los proyectos.
                                 <br/><br/>
                                 
-                                    Soy un desarrollador autodidacta FullStack, La parte FullStack en las empresas es muy amplio, y
+                                    Soy un desarrollador autodidácta FullStack, La parte FullStack en las empresas es muy amplio, y
                                     no soy un profesional nacido, durante estos años, he tocado diversas herramientas y lenguajes, 
-                                    y me he percatado que la logica con sus reglas de negocio es la clave, lo demas es similar.
+                                    y me he percatado que la lógica con sus reglas de negocio es la clave, lo demás es similar.
                                 <br/><br/>
                             
                                 </Texto>

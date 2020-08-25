@@ -1,9 +1,6 @@
-import React,{useState, useEffect} from 'react';
-// import './App.css';
+import React from 'react';
 import styled from 'styled-components'
-import {Column, Columns} from './../MyStyles/Columns'
 import {Navbar,OptionsNav,SeccionOptions,SeccionName} from './../MyStyles/Navbar'
-import {Link, useLocation, Redirect, NavLink} from 'react-router-dom'
 function NabvarJAPG() {
 
   // const initialValues={
