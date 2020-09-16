@@ -132,6 +132,7 @@ export default function () {
         <TabPanelMOd value={value} index={2} dir={theme.direction}>
           <Card imgPanel="./../icons/java.png" titleDescription="Java" />
           <Card imgPanel="./../icons/kotlin.png" titleDescription="Kotlin" />
+          <Card imgPanel="./../icons/Flutter.png" titleDescription="Flutter" />
         </TabPanelMOd>
         <TabPanelMOd value={value} index={3} dir={theme.direction}>
           <Card imgPanel="./../icons/spring.png" titleDescription="Spring" />

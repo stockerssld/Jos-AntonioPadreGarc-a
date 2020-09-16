@@ -61,9 +61,9 @@ export default function(){
                 <Texto>
                     Realización de interfaces para dispositivos móviles, y conexión de apis
                     <br/>
-                    Utilice Android Studio y React Native    
+                    Utilice Android Studio, React Native, Flutter
                     <br/>
-                    Actualmente estoy aprendiendo flutter.
+                    
                 </Texto>                       
                     
                 </ContentAlign>

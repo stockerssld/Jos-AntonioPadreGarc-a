@@ -48,7 +48,7 @@ function App() {
         <NabvarJAPG />
         <SeccionSobreMi/>
         <IntencionBusqueda />
-        <MisExperiencias/>
+        {/* <MisExperiencias/> */}
         <MisHabilidades/>
         {/* <MiCV/> */}
 
