@@ -51,11 +51,12 @@ function NabvarJAPG() {
           Sobre Mi
         </OptionsNav>
         </AB>
-        <AB href="/#CurriculumJAPG">
-        <OptionsNav key="3" /* Options={options.MisProyecto} onClickCapture={()=> Change("MisProyecto")}*/ >
-          Mi CV
-        </OptionsNav>
-        </AB>
+        {/* <AB href="/#CurriculumJAPG"> */}
+        {/* <OptionsNav key="3"  */}
+         {/* Options={options.MisProyecto} onClickCapture={()=> Change("MisProyecto")} */}
+          {/* Mi CV */}
+        {/* </OptionsNav> */}
+        {/* </AB> */}
         <AB href="/#Habilidades">
         <OptionsNav key="2" /*Options={options.misHabilidades} onClickCapture={()=> Change("misHabilidades")}*/>
           Mis habilidades
