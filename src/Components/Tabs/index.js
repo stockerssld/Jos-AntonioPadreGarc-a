@@ -159,7 +159,10 @@ export default function () {
         
         </TabPanelMOd>
         <TabPanelMOd value={value} index={5} dir={theme.direction}>
-        <Card imgPanel="./../icons/scrum.png" titleDescription="Metodología Scrum" />
+          <Card imgPanel="./../icons/jpa.png" titleDescription="JPA" />
+          <Card imgPanel="./../icons/hibernate.png" titleDescription="Hibernate" />
+          <Card imgPanel="./../icons/jsp.png" titleDescription="jSP" />
+          <Card imgPanel="./../icons/scrum.png" titleDescription="Metodología Scrum" />
           <Card imgPanel="./../icons/jasper.png" titleDescription="Jasper Studio" />
           <Card imgPanel="./../icons/xd.png" titleDescription="Adobe XD" />
           <Card imgPanel="./../icons/netlify.png" titleDescription="Netliy" />

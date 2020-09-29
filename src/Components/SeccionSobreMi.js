@@ -5,7 +5,6 @@ import { Title } from '../MyStyles/title'
 
 export default function SeccionSobreMi(){
     return(
-        
                 <SeccionAboutme id="SobreMi"  style={{backgroundColor:'whitesmoke'}}>
                     <Title style={{textAlign:'center' }}>
                         Sobre Mí
@@ -35,13 +34,7 @@ export default function SeccionSobreMi(){
                                 </Texto>
                             </Column>
                             <Column style={{ textAlign:'center'}} > 
-                                <div className="LI-profile-badge"  
-                                    data-version="v1" data-size="medium"
-                                    data-locale="es_ES" data-type="vertical"
-                                    data-theme="dark" data-vanity="jose-antonio-padre-garcía">
-                                    <a className="LI-simple-link" href='www.linkedin.com/in/jose-antonio-padre-garcía'>
-                                        José Antonio Padre García</a>
-                                </div>
+                            <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="es_ES" data-type="vertical" data-theme="dark" data-vanity="padre-japg"><a class="LI-simple-link" href='https://mx.linkedin.com/in/padre-japg?trk=profile-badge'>Jose Antonio Padre García</a></div>
                         </Column>
                     </ColumnsSeccion>
 
